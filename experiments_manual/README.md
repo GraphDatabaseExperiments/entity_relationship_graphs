@@ -102,7 +102,17 @@ For details around the experiments conducted in our research we refer to the res
 
 ### Referential Integrity Experiments
 
-To run the experiments related to referential integrity the user needs to navigate to the [respective foler](https://github.com/GraphDatabaseExperiments/entity_relationship_graphs/tree/main/referential_integrity) and depending on the experiment scenario execute the corresponding python script. In each script the required parameters that need adjusting are found in the main method
+To run the experiments related to referential integrity the user needs to navigate to the [respective foler](https://github.com/GraphDatabaseExperiments/entity_relationship_graphs/tree/main/referential_integrity) and depending on the experiment scenario execute the corresponding python script. Before executing either python script the following is required. In each script the parameters that need adjusting are found in the main method.
+
+First the credentials to establish a connection to Neo4j have to specified under:
+
+```
+    local_bolt = <local_bolt>
+    local_pw = <password>
+    local_user = "neo4j"
+```
+
+After that the experiment settings can be found under:
 
 ```
     factor = 1 # sclaing factor for TPC-H (small = 0.01 / mdedium = 0.1 / large = 1)
