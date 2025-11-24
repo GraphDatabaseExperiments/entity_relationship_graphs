@@ -116,7 +116,7 @@ To run the experiments related to referential integrity the user needs to naviga
     outliers = 5
 ```
 
-Here, depending on dataset size the variable <mark>factor</mark> will have to be set to either 0.01, 0.1 or 1. The list percentage_to_update represents the amount of records for the respective experiment scenario that are being updated. For each value in the list the experiment will be run multiple times according to the amount specified under runs. Exactly one of the three boolean variables is_relational_model, is_semirelational_model and is_graph_model will have to be set to True and the other two to False to specify which graph semantics we use for the experiment. Finally, the value outliers determines the amount of measured results on the top and bottom end of results that are disregarded when determining average values.
+Here, depending on dataset size the variable *factor* will have to be set to either 0.01, 0.1 or 1. The list *percentage_to_update* represents the amount of records for the respective experiment scenario that are being updated. For each value in the list the experiment will be run multiple times according to the amount specified under *runs*. Exactly one of the three boolean variables *is_relational_model*, *is_semirelational_model* and *is_graph_model* will have to be set to True and the other two to False to specify which graph semantics we use for the experiment. Finally, the variable *outliers* determines the amount of measured results on the top and bottom end of results that are disregarded when determining average values.
 
 
 ## How to run Python and Neo4j using Neo4j Python Driver: 
