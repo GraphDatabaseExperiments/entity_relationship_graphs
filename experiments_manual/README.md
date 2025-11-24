@@ -100,6 +100,24 @@ RETURN pattern
 
 For details around the experiments conducted in our research we refer to the respective folders that contain information on the experiments around [Entity Integrity](https://github.com/GraphDatabaseExperiments/integrity_experiments/tree/main/entity_integrity) and [Referential Integrity](https://github.com/GraphDatabaseExperiments/integrity_experiments/tree/main/referential_integrity) management in E/R graphs.
 
+### Referential Integrity Experiments
+
+To run the experiments related to referential integrity the user needs to navigate to the [respective foler](https://github.com/GraphDatabaseExperiments/entity_relationship_graphs/tree/main/referential_integrity) and depending on the experiment scenario execute the corresponding python script. In each script the required parameters that need adjusting are found in the main method
+
+```
+    factor = 1 # sclaing factor for TPC-H (small = 0.01 / mdedium = 0.1 / large = 1)
+    percentage_to_update = [0.2, 0.4, 0.6, 0.8, 1]
+    is_relational_model = True
+    is_semirelational_model = False
+    is_graph_model = False
+
+    runs = 20
+
+    outliers = 5
+```
+
+Here, depending on dataset size the variable factor will have to be set to either 0.01, 0.1 or 1. The list percentage_to_update represents the amount of records for the respective experiment scenario that are being updated. For each value in the list the experiment will be run multiple times according to the amount specified under runs. Exactly one of the three boolean variables is_relational_model, is_semirelational_model and is_graph_model will have to be set to True and the other two to False to specify which graph semantics we use for the experiment. Finally, the value outliers determines the amount of measured results on the top and bottom end of results that are disregarded when determining average values.
+
 
 ## How to run Python and Neo4j using Neo4j Python Driver: 
 
