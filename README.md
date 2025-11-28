@@ -26,7 +26,7 @@ The software used to perform the experiments carried out in our research are:
 
 
 
-The TPC-H benchmark is provided on the official [TPC website](https://www.tpc.org/tpch/). 
+Information on the TPC-H benchmark is provided in the [dataset folder](https://github.com/GraphDatabaseExperiments/entity_relationship_graphs/tree/main/datasets). Detailed information can be found on the official [TPC website](https://www.tpc.org/tpch/). 
 
 
 ## Experiments:
